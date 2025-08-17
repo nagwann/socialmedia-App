@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "userName": "Ahmed",
+    "userPhoto": "assets/imgs/profile_pic2.avif",
+    "action": "Accepted your friend request",
+    "timeAgo": "2 Hours Ago"
+  },
+  {
+    "id": 2,
+    "userName": "Mohammed",
+    "userPhoto": "assets/imgs/profile_pic3.jpg",
+    "action": "Liked your post",
+    "timeAgo": "1 Day Ago"
+  },
+  {
+    "id": 3,
+    "userName": "Ali",
+    "userPhoto": "assets/imgs/profile_pic5.avif",
+    "action": "commented on your post",
+    "timeAgo": "2 Days Ago"
+  },
+  {
+    "id": 4,
+    "userName": "Weam",
+    "userPhoto": "assets/imgs/profile_pic6.avif",
+    "action": "Accepted your friend request",
+    "timeAgo": "4 Days Ago"
+  }
+]

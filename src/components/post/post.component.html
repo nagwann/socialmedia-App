@@ -1,0 +1,99 @@
+<div class="middel">
+
+    <div class="creat_post_section">
+        <form class="creat-post" (ngSubmit)="addNewPost()">
+            <div class="flex">
+                <div class="profail_photo">
+                    <img class="user_photo"  src="assets\imgs\profile_pic1.jpg" alt="">
+                </div>
+                <input type="text" placeholder="What is on your mind ?" [(ngModel)]="newPostText" name="caption"
+                    required>
+
+                <input type="submit" value="Post" class="btn btn-primary">
+
+                <label for="upload-image" class="upload-btn" *ngIf="!newPostImage">+</label>
+                <input type="file" id="upload-image" accept="image/*" (change)="onImageSelected($event)"
+                    style="display: none;">
+
+                <span id="file-name" class="text-muted"></span>
+            </div>
+
+            <div *ngIf="newPostImage" class="preview">
+                <img [src]="newPostImage" alt="Preview" style="max-width: 100%; margin-top: 10px; border-radius: 10px;">
+                <button type="button" (click)="removeImage()"
+                    style="background: red; color: white; border: none; padding: 5px 10px; margin-top: 5px; cursor: pointer; border-radius: 50%;">x</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="posts">
+        <div class="post" *ngFor="let post of posts">
+            <div class="head">
+                <div class="user">
+                    <div class="profail_photo">
+                        <img class="profails" [src]="post.userPhoto" alt="user photo" />
+                    </div>
+                    <div class="info">
+                        <h3>{{ post.userName }}</h3>
+                        <small>{{ post.location }}, {{ post.timeAgo }}</small>
+                    </div>
+                </div>
+                <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+            </div>
+
+            <div class="photo">
+                <img [src]="post.postImage" width="100%" alt="post image" style=" height: 450px;" />
+            </div>
+
+            <div class="action-buttons">
+                <div class="interaction-buttons">
+                    <button (click)="toggleLike(post)">
+
+                        <i id="like-btn"
+                            [ngClass]="{'ri-bard-line': !post.liked, 'ri-bard-fill liked': post.liked}"></i>
+
+                        <span> {{ post.likes | number }}</span>
+
+                    </button>
+
+                    <button (click)="toggleComment(post)">
+                        <i class="ri-chat-1-line"></i>
+
+                        <span>{{ post.commentsCount }}</span>
+                    </button>
+
+                </div>
+
+
+                <div class="bookmark">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+            </div>
+
+            <div class="liked-by">
+                <ng-container *ngFor="let photo of post.likedByPhotos">
+                    <span><img [src]="photo" alt=""></span>
+                </ng-container>
+                <p>Sparked by <b>{{ post.likedBy }}</b> and <b>{{ post.likes }} others</b></p>
+            </div>
+
+            <div class="caption">
+                <p><b>{{ post.userName }}</b> {{ post.caption }} <span class="harsg-tag">{{ post.hashtag
+                        }}</span></p>
+            </div>
+
+            <div class="comments text-muted">
+                View all {{ post.commentsCount }} comments
+            </div>
+            <div *ngIf="post.showComments" class="comment-section">
+                <ul>
+                    <li *ngFor="let comment of post.comments">{{ comment }}</li>
+                </ul>
+                <input type="text" [(ngModel)]="post.newComment" placeholder="Write a comment..." />
+                <button (click)="addComment(post)">Post</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,117 @@
+ <div class="left">
+            <div class="profail_info">
+                <img src=".\assets\imgs\profile_pic1.jpg" alt="">
+                <div class="user_name">
+                    <h4>Nagwan</h4>
+                    <p><i class="ri-at-line"></i> Nagwan</p>
+                </div>
+            </div>
+            <div class="pages_list" id="menuContainer">
+                <a class="menu_item active" id="Home">
+                    <span>
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <p>Home</p>
+                </a>
+
+                <a class="menu_item">
+                    <span>
+                        <i class="fa-regular fa-user"></i>
+                    </span>
+                    <p>Profile</p>
+                </a>
+
+                <a class="menu_item" id="Notifications">
+                    <span>
+                        <i class="fa-regular fa-bell"> <small class="Notifications_count">9+</small> </i>
+                    </span>
+
+                    <p>Notifications</p>
+                    <div class="Notifications_popup">
+                        <div *ngFor="let notify of notifications">
+                            <div class="profail_photo">
+                                <img class="profails" [src]="notify.userPhoto" alt="">
+                            </div>
+                            <div class="Notifications_body">
+                                <b>{{ notify.userName }}</b> {{ notify.action }}
+                                <small>{{ notify.timeAgo }}</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+
+                <a class="menu_item" id="Messages_Notifications">
+                    <span>
+                        <i class="fa-regular fa-message"> <small class="Notifications_count">6</small> </i>
+                    </span>
+                    <p>Messages</p>
+                </a>
+                <a class="menu_item">
+                    <span>
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    <p>Friends</p>
+                </a>
+                <a class="menu_item" id="theme">
+                    <span>
+                        <i class="fa-solid fa-palette"></i>
+                    </span>
+                    <p>Theme</p>
+                </a>
+            </div>
+            <div class="creat_botton">
+                <label for="creat-post" class="btn btn-primary">creat post</label>
+            </div>
+        </div>
+
+                <div class="customize-theme">
+            <div class="card">
+                <h2>customize your view</h2>
+                <p class="text-muted">Manage your font sise , color , and background</p>
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div>
+                        <h6>Aa</h6>
+                        <div class="choose-size">
+                            <span class="font-size-1"></span>
+                            <span class="font-size-2 active"></span>
+                            <span class="font-size-3"></span>
+
+                        </div>
+                        <h3>Aa</h3>
+                    </div>
+                </div>
+
+                <div class="color">
+                    <h4>color</h4>
+                    <div class="choose-color">
+                        <span class="color-1 active"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                    </div>
+                </div>
+
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg-1 active">
+                            <span></span>
+                            <h5 for="bg-1 active">Light</h5>
+                        </div>
+
+                        <div class="bg-2">
+                            <span></span>
+                            <h5 for="bg-2">Dim</h5>
+                        </div>
+
+                        <div class="bg-3">
+                            <span></span>
+                            <h5 for="bg-3">Lights Out</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

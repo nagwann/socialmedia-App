@@ -1,0 +1,56 @@
+
+app-navbar {
+  display: block;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 20px;
+}
+
+
+app-sidebar {
+  flex: 1;              
+  max-width: 280px;     
+  margin-left: 25px;
+
+   margin-left: 25px;
+  position: sticky;      /* خليها ثابتة */
+  top: 70px;             /* مسافة من أعلى الصفحة */
+  height: fit-content; 
+}
+
+
+.main-content {
+  flex: 2;            
+  max-width: 600px;
+}
+
+
+.right-panel {
+  flex: 1;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 20px;
+
+  position: sticky;    
+  top: -330px;            
+  height: fit-content; 
+}
+
+.right-panel > * {
+  padding: 10px;
+  border-radius: 10px;
+
+}

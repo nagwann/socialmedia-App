@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "userName": "Lana Rose",
+    "userPhoto": "assets/imgs/profile_pic4.jpg",
+    "location": "USA",
+    "timeAgo": "15 Minutes Ago",
+    "postImage": "assets/imgs/post1.jpg",
+    "likes": 220,
+    "commentsCount": 310,
+    "likedBy": "Emily Miller",
+    "likedByPhotos": [
+      "assets/imgs/profile_pic5.avif",
+      "assets/imgs/profile_pic2.avif",
+      "assets/imgs/profile_pic3.jpg"
+    ],
+    "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quas repudiandae laudantium",
+    "hashtag": "#life_style"
+  },
+  {
+    "id": "2",
+    "userName": "mark Andersen",
+    "userPhoto": "assets/imgs/profile_pic2.avif",
+    "location": "USA",
+    "timeAgo": "15 Minutes Ago",
+    "postImage": "assets/imgs/post3.png",
+    "likes": 220,
+    "commentsCount": 310,
+    "likedBy": "Emily Miller",
+    "likedByPhotos": [
+      "assets/imgs/profile_pic5.avif",
+      "assets/imgs/profile_pic2.avif",
+      "assets/imgs/profile_pic3.jpg"
+    ],
+    "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quas repudiandae laudantium",
+    "hashtag": "#life_style"
+  },
+  {
+    "id": "3",
+    "userName": "monika pros",
+    "userPhoto": "assets/imgs/amina.png",
+    "location": "UAE",
+    "timeAgo": "1 Hours Ago",
+    "postImage": "assets/imgs/post4.jpg",
+    "likes": 700,
+    "commentsCount": "45K",
+    "likedBy": "Emily Miller",
+    "likedByPhotos": [
+      "assets/imgs/profile_pic5.avif",
+      "assets/imgs/profile_pic2.avif",
+      "assets/imgs/profile_pic3.jpg"
+    ],
+    "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quas repudiandae laudantium",
+    "hashtag": "#life_style"
+  },
+  {
+    "id": "4",
+    "userName": "Fatema Mohammed",
+    "userPhoto": "assets/imgs/amina.png",
+    "location": "UAE",
+    "timeAgo": "2 Hours Ago",
+    "postImage": "assets/imgs/post5.jpg",
+    "likes": 4500,
+    "commentsCount": "45K",
+    "likedBy": "Emily Miller",
+    "likedByPhotos": [
+      "assets/imgs/profile_pic5.avif",
+      "assets/imgs/profile_pic2.avif",
+      "assets/imgs/profile_pic3.jpg"
+    ],
+    "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quas repudiandae laudantium",
+    "hashtag": "#life_style"
+  },
+  {
+    "id": "5",
+    "userName": "Fatema Mohammed",
+    "userPhoto": "assets/imgs/amina.png",
+    "location": "UAE",
+    "timeAgo": "2 Hours Ago",
+    "postImage": "assets/imgs/post2.jpg",
+    "likes": 4500,
+    "commentsCount": "45K",
+    "likedBy": "Emily Miller",
+    "likedByPhotos": [
+      "assets/imgs/profile_pic5.avif",
+      "assets/imgs/profile_pic2.avif",
+      "assets/imgs/profile_pic3.jpg"
+    ],
+    "caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident quas repudiandae laudantium",
+    "hashtag": "#life_style"
+  }
+]

@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+:root {
+    --primary-color-hue: 252;
+
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 95%;
+    --white-color-lightness: 100%;
+
+
+    --color-white: hsl(252, 30%, var(--white-color-lightness));
+    --color-light: hsl(252, 30%,var(--light-color-lightness));
+    --color-gray: hsl(252, 15%, 35%);
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+    --color-black: hsl(252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+     background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.main {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.text-muted {
+    color: var(--color-gray);
+}
+
+
+.profails {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    align-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    align-self: center;
+}

@@ -1,0 +1,150 @@
+/* .middel {
+    width: 45%;
+    height: 5000px;
+    align-items: center;
+} */
+
+.middel .creat-post {
+    width: 100%;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-white);
+    padding: 0.4em var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.flex {
+    display: flex;
+}
+
+.upload-btn {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 26px;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.upload-btn:hover {
+    opacity: 0.8;
+}
+
+.middel .creat-post input[type="text"] {
+    justify-self: start;
+    width: 100%;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+}
+
+.middel .posts .post {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.middel .post .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middel .post .user {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+.middel .post .photo {
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: 0rem 0;
+    height: max-content;
+}
+
+.middel .post .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+
+.action-buttons button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+}
+
+.interaction-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.action-buttons span {
+    font-size: small;
+}
+
+
+.middel .liked-by {
+    display: flex;
+}
+
+#like-btn {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.liked {
+    color: var(--color-primary);
+}
+
+
+
+.middel .liked-by span {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-white);
+    margin-left: -0.6rem;
+}
+
+.middel .liked-by span:first-child {
+    margin: 0;
+}
+
+.middel .liked-by p {
+    margin-left: 0.5rem;
+}
+
+
+.user_photo {
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    align-self: center;
+
+}
