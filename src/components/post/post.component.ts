@@ -130,13 +130,12 @@ export class PostComponent implements OnInit, AfterViewInit {
       comments: []
     };
 
-    // إضافة البوست الجديد في البداية
+   
     this.posts.unshift(newPost);
 
-    // حفظ البوستات في localStorage
+
     localStorage.setItem('posts', JSON.stringify(this.posts));
 
-    // إعادة تعيين الحقول
     this.newPostText = '';
     this.newPostImage = null;
   }
