@@ -114,9 +114,9 @@ export class PostComponent implements OnInit, AfterViewInit {
 
     const newPost: Post = {
       id: Date.now().toString(),
-      userName: 'Current User',
-      userPhoto: './imgs/profile_pic1.webp',
-      location: 'Cairo',
+      userName: 'YOU',
+      userPhoto: 'assets/imgs/profile_pic1.jpg',
+      location: 'Aswan',
       timeAgo: 'Just now',
       postImage: this.newPostImage || '',
       likes: 0,
@@ -141,7 +141,7 @@ export class PostComponent implements OnInit, AfterViewInit {
     this.newPostImage = null;
   }
 
-  ////////// تهيئة رفع الصور للبوست الجديد
+ 
   private initializeImageUpload(): void {
     const uploadImage = document.getElementById("upload-image") as HTMLInputElement | null;
     const uploadBtn = document.querySelector(".upload-btn") as HTMLElement | null;
