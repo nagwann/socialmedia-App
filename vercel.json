@@ -1,14 +1,16 @@
+
 {
   "version": 2,
   "name": "social-app",
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist/social-app" }
+      "use": "@vercel/static-build"
     }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html"}
+  "buildCommand": "npm install && npm run build -- --configuration production",
+  "outputDirectory": "dist/social-app",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
