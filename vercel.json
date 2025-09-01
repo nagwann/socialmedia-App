@@ -11,6 +11,6 @@
   "buildCommand": "npm install && npm run build -- --configuration production",
   "outputDirectory": "dist/social-app",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
