@@ -1,9 +1,82 @@
-/* .middel {
-    width: 45%;
-    height: 5000px;
-    align-items: center;
-} */
 
+.middel .stories {
+    display: flex;
+    justify-content: space-between;
+    height: 12rem;
+    gap: 0.5rem;
+
+}
+
+.middel .stories .story {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.75rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.middel .stories .story::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 75));
+    position: absolute;
+    bottom: 0;
+}
+
+.middel .stories .story .name {
+    z-index: 2;
+}
+
+.middel .stories .story:nth-child(1) {
+    background: url('../../assets/imgs/story1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.middel .stories .story:nth-child(2) {
+    background: url('../../assets/imgs/story3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.middel .stories .story:nth-child(3) {
+    background: url('../../assets/imgs/story2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.middel .stories .story:nth-child(4) {
+    background: url('../../assets/imgs/story5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.middel .stories .story:nth-child(5) {
+    background: url('../../assets/imgs/story4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.middel .stories .profail_photo {
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+}
+
+/* ///////////////////////////////// */
 .middel .creat-post {
     width: 100%;
     margin-top: 1rem;
@@ -118,7 +191,6 @@
 }
 
 
-
 .middel .liked-by span {
     width: 1.4rem;
     height: 1.4rem;
@@ -147,4 +219,10 @@
     cursor: pointer;
     align-self: center;
 
+}
+
+@media (max-width:900px) {
+.middel {
+ width: 100%;
+    }
 }

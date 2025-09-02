@@ -10,6 +10,7 @@
     list-style: none;
     border: none;
 }
+
 :root {
     --primary-color-hue: 252;
 
@@ -19,7 +20,7 @@
 
 
     --color-white: hsl(252, 30%, var(--white-color-lightness));
-    --color-light: hsl(252, 30%,var(--light-color-lightness));
+    --color-light: hsl(252, 30%, var(--light-color-lightness));
     --color-gray: hsl(252, 15%, 35%);
     --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
     --color-secondary: hsl(252, 100%, 90%);
@@ -50,8 +51,7 @@
 }
 
 body {
-    /* font-family: 'Poppins', sans-serif; */
-     background-color: var(--color-light);
+    background-color: var(--color-light);
     color: var(--color-dark);
 }
 
@@ -102,3 +102,109 @@ body {
     cursor: pointer;
     align-self: center;
 }
+
+
+
+/* <!-- start media Queries (1) --> */
+@media (max-width:900px) {
+
+    app-navbar {
+        width: 100%;
+    }
+
+    app-sidebar {
+        max-width: 100px;
+    }
+
+    app-sidebar .left {
+        width: 5rem;
+        z-index: 5;
+        top: 100px;
+    }
+
+
+    app-sidebar .left .profail_info {
+        display: none;
+    }
+
+    .pages_list p {
+        display: none;
+    }
+
+    app-sidebar .left .creat_botton {
+        display: none;
+    }
+
+    #none {
+        display: none;
+    }
+
+    .right-panel {
+        width: 30%;
+    }
+
+    .right-panel .search-bar {
+        display: none;
+    }
+
+    .right-panel .request .action {
+        flex-direction: column;
+    }
+
+    .customize-theme .card {
+        width: 70vw;
+    }
+}
+
+
+/* <!-- start media Queries (2) --> */
+
+@media (max-width:750px) {
+
+    .layout .left {
+        grid-column: 3/4;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+
+    }
+
+    app-sidebar .left .Notifications_popup {
+        position: absolute;
+        left: -20rem;
+        width: 20rem;
+    }
+
+    app-sidebar .left .Notifications_popup::before {
+        display: absolute;
+        top: 1.3rem;
+        left: calc(20rem - 0.6rem);
+        display: block;
+
+    }
+
+    .layout .main-content {
+        width: 77%;
+        margin-left: 30px;
+    }
+
+    .main-content {
+        margin: auto;
+    }
+
+    app-messages,
+    app-requests {
+        display: none;
+    }
+
+    .customize-theme .card {
+        width: 60vw;
+    }
+
+    .customize-theme .choose-bg {
+        flex-direction: column;
+    }
+}
+
+
+/* <!-- end media Queries --> */

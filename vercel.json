@@ -6,7 +6,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist/social-app"
+        "distDir": "dist/social-app/browser"
       }
     }
   ],

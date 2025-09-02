@@ -44,6 +44,9 @@
 }
 
 @media (max-width:900px) {
+    .nav{
+        padding-left: 20px;
+    }
 
     .nav .icons i {
         margin: 0px 40px 0px 40px;
@@ -52,6 +55,13 @@
 
 @media (max-width:750px) {
     .nav .icons {
+        display: none;
+    }
+    .right_section{
+        padding: 0%;
+    }
+
+    .nav .user_name{
         display: none;
     }
 

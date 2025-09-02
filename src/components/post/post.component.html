@@ -1,10 +1,44 @@
 <div class="middel">
+    <div class="stories">
+        <div class="story">
+            <div class="profail_photo">
+                <img class="user_photo" src="../../assets/imgs/profile_pic5.webp" alt="1">
+            </div>
+            <p class="name">your <br>story</p>
+        </div>
+        <div class="story">
+            <div class="profail_photo">
+                <img class="user_photo" src="../../assets/imgs/profile_pic2.avif" alt="2">
+            </div>
+            <p class="name">mark <br>Andersen</p>
+        </div>
+        <div class="story">
+            <div class="profail_photo">
+                <img class="user_photo" src="../../assets/imgs/profile_pic3.jpg" alt="3">
+            </div>
+            <p class="name">Emily <br>Miller</p>
+        </div>
+        <div class="story non"  id="none">
+            <div class="profail_photo">
+                <img class="user_photo" src="../../assets/imgs/profile_pic4.jpg" alt="4">
+            </div>
+            <p class="name">Olivia <br>Brown</p>
+        </div>
+        <div class="story non" id="none">
+            <div class="profail_photo">
+                <img class="user_photo" src="../../assets/imgs/profile_pic5.avif" alt="5">
+            </div>
+            <p class="name">James <br>Moore</p>
+        </div>
+    </div>
+
+    <br>
 
     <div class="creat_post_section">
         <form class="creat-post" (ngSubmit)="addNewPost()">
             <div class="flex">
                 <div class="profail_photo">
-                    <img class="user_photo"  src="assets\imgs\profile_pic1.jpg" alt="">
+                    <img class="user_photo" src="assets\imgs\profile_pic1.jpg" alt="">
                 </div>
                 <input type="text" placeholder="What is on your mind ?" [(ngModel)]="newPostText" name="caption"
                     required>

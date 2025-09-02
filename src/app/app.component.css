@@ -22,17 +22,15 @@ app-sidebar {
   flex: 1;              
   max-width: 280px;     
   margin-left: 25px;
-
    margin-left: 25px;
-  position: sticky;      /* خليها ثابتة */
-  top: 70px;             /* مسافة من أعلى الصفحة */
+  position: sticky;      
+  top: 70px;             
   height: fit-content; 
 }
 
 
 .main-content {
-  flex: 2;            
-  max-width: 600px;
+ width: 45%;
 }
 
 
@@ -53,4 +51,16 @@ app-sidebar {
   padding: 10px;
   border-radius: 10px;
 
+}
+
+@media (max-width:750px) {
+
+.layout{
+  display: inline-block;
+    width: 90%;
+    margin: 0%;
+}
+.main-content{
+  width: 80%;
+}
 }
