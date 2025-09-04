@@ -47,7 +47,6 @@
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
-
 }
 
 body {
@@ -122,7 +121,6 @@ body {
         top: 100px;
     }
 
-
     app-sidebar .left .profail_info {
         display: none;
     }
@@ -140,7 +138,7 @@ body {
     }
 
     .right-panel {
-        width: 30%;
+        width: 40%;
     }
 
     .right-panel .search-bar {

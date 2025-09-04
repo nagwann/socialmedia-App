@@ -4,6 +4,7 @@
     justify-content: space-between;
     height: 12rem;
     gap: 0.5rem;
+    z-index: -1;
 
 }
 
@@ -19,6 +20,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+      z-index: -1;
 }
 
 .middel .stories .story::before {

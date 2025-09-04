@@ -1,9 +1,8 @@
-
 app-navbar {
   display: block;
   width: 100%;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -19,18 +18,18 @@ app-navbar {
 
 
 app-sidebar {
-  flex: 1;              
-  max-width: 280px;     
+  flex: 1;
+  max-width: 280px;
   margin-left: 25px;
-   margin-left: 25px;
-  position: sticky;      
-  top: 70px;             
-  height: fit-content; 
+  margin-left: 25px;
+  position: sticky;
+  top: 70px;
+  height: fit-content;
 }
 
 
 .main-content {
- width: 45%;
+  width: 45%;
 }
 
 
@@ -42,25 +41,26 @@ app-sidebar {
   gap: 15px;
   margin-right: 20px;
 
-  position: sticky;    
-  top: -330px;            
-  height: fit-content; 
+  position: sticky;
+  top: -330px;
+  height: fit-content;
+  z-index: -1;
 }
 
-.right-panel > * {
+.right-panel>* {
   padding: 10px;
   border-radius: 10px;
-
 }
 
 @media (max-width:750px) {
 
-.layout{
-  display: inline-block;
+  .layout {
+    display: inline-block;
     width: 90%;
     margin: 0%;
-}
-.main-content{
-  width: 80%;
-}
+  }
+
+  .main-content {
+    width: 85%;
+  }
 }

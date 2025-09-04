@@ -1,10 +1,4 @@
-/* 
-.right {
-    width: 23%;
-    height: max-content;
-    position: sticky;
-    top: var(--sticky-top-right);
-} */
+
 
 .Messages {
     background: var(--color-white);
@@ -96,4 +90,20 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+/* <!-- start media Queries (1) --> */
+@media (max-width:900px) {
+    .Messages {
+        width: 100%;
+    }
+
+     .search-bar {
+        display: none;
+    }
+}
+
+/* <!-- start media Queries (2) --> */
+@media (max-width:750px) {
+    
 }
