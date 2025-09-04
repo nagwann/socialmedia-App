@@ -40,7 +40,6 @@ app-sidebar {
   flex-direction: column;
   gap: 15px;
   margin-right: 20px;
-
   position: sticky;
   top: -330px;
   height: fit-content;
@@ -52,7 +51,21 @@ app-sidebar {
   border-radius: 10px;
 }
 
-@media (max-width:750px) {
+
+
+@media (max-width:900px) {
+
+  .main-content{
+    width: 55%;
+  }
+  app-sidebar {
+    max-width: 80px;
+    margin-right: 20px;
+    margin: 0%;
+  }
+}
+
+@media (max-width:650px) {
 
   .layout {
     display: inline-block;
@@ -62,5 +75,7 @@ app-sidebar {
 
   .main-content {
     width: 85%;
+    margin-left: 5%;
+    margin-right: 20px;
   }
 }

@@ -1,4 +1,3 @@
-
 .middel .stories {
     display: flex;
     justify-content: space-between;
@@ -20,7 +19,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-      z-index: -1;
+    z-index: -1;
 }
 
 .middel .stories .story::before {
@@ -224,7 +223,20 @@
 }
 
 @media (max-width:900px) {
-.middel {
- width: 100%;
+    .middel {
+        width: 100%;
+        margin: auto;
     }
+     .middel .btn{
+        display: none;
+     }
+}
+
+@media (max-width:650px) {
+   .middel .posts .post .caption{
+    display: none;
+   }
+   .middel .posts .post .photo img {
+   max-height: 300px;
+   }
 }

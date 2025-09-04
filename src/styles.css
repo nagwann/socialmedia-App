@@ -111,10 +111,6 @@ body {
         width: 100%;
     }
 
-    app-sidebar {
-        max-width: 100px;
-    }
-
     app-sidebar .left {
         width: 5rem;
         z-index: 5;
@@ -149,21 +145,19 @@ body {
         flex-direction: column;
     }
 
-    .customize-theme .card {
-        width: 70vw;
-    }
 }
 
 
 /* <!-- start media Queries (2) --> */
 
-@media (max-width:750px) {
+@media (max-width:650px) {
 
     .layout .left {
         grid-column: 3/4;
         position: fixed;
         bottom: 0;
         right: 0;
+        max-width: 60px;
 
     }
 
@@ -195,13 +189,7 @@ body {
         display: none;
     }
 
-    .customize-theme .card {
-        width: 60vw;
-    }
-
-    .customize-theme .choose-bg {
-        flex-direction: column;
-    }
+    
 }
 
 

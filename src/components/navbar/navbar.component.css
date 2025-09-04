@@ -53,7 +53,10 @@
     }
 }
 
-@media (max-width:750px) {
+@media (max-width:650px) {
+    .nav{
+       padding-right: 15px;
+    }
     .nav .icons {
         display: none;
     }

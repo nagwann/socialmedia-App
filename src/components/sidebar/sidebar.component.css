@@ -334,6 +334,25 @@
     margin-right: 1rem;
 }
 
+@media (max-width:900px) {
+
+   .customize-theme .card {
+        width: 60vw;
+    }
+}
 
 
+@media (max-width:650px) {
 
+   .customize-theme .card {
+        width: 60vw;
+        height: 75vh;
+    }
+    .customize-theme .card {
+        width: 60vw;
+    }
+
+    .customize-theme .choose-bg {
+        flex-direction: column;
+    }
+}
