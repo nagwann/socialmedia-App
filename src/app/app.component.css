@@ -25,11 +25,13 @@ app-sidebar {
   position: sticky;
   top: 70px;
   height: fit-content;
+  z-index: 2;
 }
 
 
 .main-content {
   width: 45%;
+  z-index: 1;
 }
 
 
@@ -43,7 +45,7 @@ app-sidebar {
   position: sticky;
   top: -330px;
   height: fit-content;
-  z-index: -1;
+   z-index: 1;
 }
 
 .right-panel>* {

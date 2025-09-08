@@ -40,12 +40,10 @@ export class PostComponent implements OnInit, AfterViewInit {
   constructor(private postsService: PostsService) { }
 
   ngOnInit(): void {
-    // جلب البوستات من localStorage أولاً
     const savedPosts = localStorage.getItem('posts');
     if (savedPosts) {
       this.posts = JSON.parse(savedPosts);
     } else {
-      // لو مفيش، جلب البوستات من الخدمة
       this.postsService.getPosts().subscribe((data: Post[]) => {
         this.posts = data.map(post => {
           const liked = localStorage.getItem(`liked-${post.id}`) === 'true';
@@ -73,7 +71,7 @@ export class PostComponent implements OnInit, AfterViewInit {
       post.likes--;
       post.liked = false;
     }
-    // حفظ اللايك في localStorage
+
     localStorage.setItem(`liked-${post.id}`, String(post.liked));
     localStorage.setItem(`likeCount-${post.id}`, post.likes.toString());
   }
@@ -89,11 +87,10 @@ export class PostComponent implements OnInit, AfterViewInit {
     post.comments.push(post.newComment.trim());
     post.newComment = '';
 
-    // تحديث localStorage بعد إضافة تعليق
     localStorage.setItem('posts', JSON.stringify(this.posts));
   }
 
-  ////////// إضافة بوست جديد
+
   onImageSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files[0]) {
